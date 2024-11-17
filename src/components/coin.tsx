@@ -13,7 +13,7 @@ import {
 
 export default function CoinRates() {
     const API_KEY = "68bc7a8c28142955fcc41949a2d83e2f";
-    const [data, setData] = useState<any>(null);
+    const [data, setData] = useState<number|null>(null);
 
     useEffect(() => {
         fetch(`http://api.coinlayer.com/live?access_key=${API_KEY}`)
